@@ -8,7 +8,7 @@ exports.throwUnsupported = throwUnsupported;
 function isValidUrl(str) {
     try {
         const url = new URL(str);
-        return url.protocol === "http" || url.protocol === "https";
+        return url.protocol === "http:" || url.protocol === "https:";
     }
     catch (_) {
         return false;
